@@ -1,0 +1,469 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:ital,opsz,wght@0,8..30,100..900;1,8..30,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "piazzolla", serif;
+}
+
+:root {
+    --main-bg: #1e272e;
+    --main-color: #0097e6;
+}
+
+html {
+    /* it make 1rem as a 10px */
+    font-size: 62.5%;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    margin: 0;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.main_menu {
+    background-color: var(--main-bg);
+}
+
+.navbar {
+    color: #fff;
+    background-color: var(--main-bg);
+    padding: 2rem 0;
+}
+
+.navbar a {
+    color: #fff;
+    font-size: 1.8rem;
+    margin: 0rem 2rem 0rem 2rem;
+}
+
+.navbar a:hover {
+    color: var(--main-color);
+}
+
+.navbar-toggler {
+    background-color: white;
+
+}
+
+.fa-snowflake {
+    transition: all;
+    animation: rot 2s linear infinite;
+    color: var(--main-color);
+}
+
+@keyframes rot {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* main_header_left */
+.main_header_left {
+    height: 70rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.main_header_left p {
+    font-size: 2rem;
+}
+
+.main_header_left h1 {
+    font-size: 4rem;
+    margin: 1rem 0 4rem 0;
+    text-transform: capitalize;
+}
+
+.main_header_left .text_color {
+    color: var(--main-color);
+}
+
+.main_header_left button {
+    font-size: 1.4rem;
+    color: #fff;
+    background-color: var(--main-color);
+    border: none;
+    padding: 0.8rem 1.8rem;
+    border-radius: 4rem;
+    text-transform: uppercase;
+    /* use for shadow */
+    box-shadow: 0 8px 6px -6px #000;
+
+}
+
+.main_header_left button:hover {
+    /* thats give u houver effect  with color */
+    box-shadow: 0 8px 6px -6px var(--main-color);
+
+}
+
+/* main_header_left_close*/
+
+
+/* main_header_right */
+.main_header_right {
+    height: 70rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+/* main_header_right_close*/
+
+footer {
+    width: 100%;
+    background-color: var(--main-bg);
+    margin-top: auto;
+
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+    color: #fff;
+    line-height: 5rem;
+    font-size: 1.4rem;
+
+    text-transform: capitalize;
+
+}
+
+
+
+/* about left img */
+.main_header_left_about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.main_header_left_about figure img {
+    filter: drop-shadow(0 0.3rem 3rem rgba(0, 0, 0, 0.3));
+}
+
+/* close left */
+.main_header_right_about {
+    height: 70rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding-left: 1rem; */
+}
+
+.main_header_right_about p {
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+.main_header_right_about h1 {
+    font-size: 4rem;
+    margin: 1rem 0 4rem 0;
+    text-transform: capitalize;
+}
+
+.main_header_right_about .text_color {
+    color: var(--main-color);
+}
+
+.main_header_right_about button {
+    font-size: 1.4rem;
+    color: #fff;
+    background-color: var(--main-color);
+    border: none;
+    padding: 0.8rem 1.8rem;
+    border-radius: 4rem;
+    text-transform: uppercase;
+    /* use for shadow */
+    box-shadow: 0 8px 6px -6px #000;
+
+}
+
+.main_header_right_about button:hover {
+    /* thats give u houver effect  with color */
+    box-shadow: 0 8px 6px -6px var(--main-color);
+
+}
+
+/* weather temp details style */
+.tempInformation {
+    width: 50rem;
+    margin: auto;
+    min-height: 20rem;
+    background-color: #323544;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-family: "Roboto", sans-serif;
+}
+
+.top_layer {
+    width: 100%;
+    height: 20%;
+    background-color: #323544;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+.top_layer p {
+    color: #fff;
+    font-weight: 300;
+    padding: 2rem;
+    font-size: 1.8rem;
+}
+
+.main_layer {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.main_layer #city_name {
+    padding: 2rem 0;
+    color: #bfc1c8;
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+.main_layer .middle_layer {
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+}
+
+.main_layer .middle_layer p,
+.main_layer .middle_layer .fa {
+    font-size: 7rem;
+    font-weight: 900;
+}
+
+.fa {
+    color: #009ad8;
+}
+
+sup {
+    font-size: 6rem;
+    margin-top: -2rem;
+}
+
+.data_hide {
+    visibility: hidden;
+    transition: all 0.3s linear;
+}
+
+.temp_form {
+    width: 60%;
+    position: relative;
+    margin: 8rem auto 6rem;
+}
+
+.temp_form input[type="text"] {
+    width: 100%;
+    padding: 2rem 5rem 2rem 2rem;
+    background: #1e202b;
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 1.7rem;
+    border-radius: 3rem;
+}
+
+/* we can select sudo element */
+::placeholder {
+    color: #bfc1c8;
+}
+
+.temp_form input[type="submit"] {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: none;
+    background: #009ad8;
+    padding: 0 3rem;
+    border-radius: 3rem;
+    color: white;
+    font-size: 1.6rem;
+}
+
+.temp_form input[type="submit"]:hover {
+    color: #009ad8;
+    background-color: #fff;
+}
+
+/* error page  */
+.errimg img {
+    width: 60rem;
+    height: 30rem;
+}
+
+
+/* responsive code  this makes home page div responsive to mobile*/
+@media (max-width:768px) {
+    .main_header_left {
+        height: auto;
+        margin: 5rem 0;
+    }
+
+    .main_header_right {
+        height: auto;
+        margin-top: 3rem;
+    }
+
+    .main_header_right_about {
+        height: auto;
+        margin: 5rem 0;
+    }
+
+    .main_header_left_about {
+        height: auto;
+        margin-top: 3rem;
+    }
+
+    /* it make responsive input and form */
+    .temp_form {
+        width: auto;
+    }
+
+    .tempInformation {
+        width: auto;
+    }
+
+    .main_layer .middle_layer p,
+    .main_layer .middle_layer .fa {
+        font-size: 5rem;
+
+    }
+
+}
+
+
+
+/* icon about page */
+/* From Uiverse.io by wilsondesouza */ 
+ul {
+    list-style: none;
+  }
+  
+  .example-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .example-2 .icon-content {
+    margin: 0 10px;
+    position: relative;
+  }
+  .example-2 .icon-content .tooltip {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    font-size: 14px;
+    transition: all 0.3s ease;
+  }
+  .example-2 .icon-content:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    top: -50px;
+  }
+  .example-2 .icon-content a {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #4d4d4d;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+  }
+  .example-2 .icon-content a:hover {
+    box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
+  }
+  .example-2 .icon-content a svg {
+    position: relative;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+  }
+  .example-2 .icon-content a:hover {
+    color: white;
+  }
+  .example-2 .icon-content a .filled {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #000;
+    transition: all 0.3s ease-in-out;
+  }
+  .example-2 .icon-content a:hover .filled {
+    height: 100%;
+  }
+  
+  .example-2 .icon-content a[data-social="linkedin"] .filled,
+  .example-2 .icon-content a[data-social="linkedin"] ~ .tooltip {
+    background-color: #0274b3;
+  }
+  
+  .example-2 .icon-content a[data-social="github"] .filled,
+  .example-2 .icon-content a[data-social="github"] ~ .tooltip {
+    background-color: #24262a;
+  }
+  .example-2 .icon-content a[data-social="instagram"] .filled,
+  .example-2 .icon-content a[data-social="instagram"] ~ .tooltip {
+    background: linear-gradient(
+      45deg,
+      #405de6,
+      #5b51db,
+      #b33ab4,
+      #c135b4,
+      #e1306c,
+      #fd1f1f
+    );
+  }
+  .example-2 .icon-content a[data-social="youtube"] .filled,
+  .example-2 .icon-content a[data-social="youtube"] ~ .tooltip {
+    background-color: #ff0000;
+  }
+  
+.icons{
+    margin-top: 4rem;
+    padding: 3rem;
+}

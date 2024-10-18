@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   {{>headlinks}}
+
+</head>
+
+<body>
+    {{>navbar}}
+
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="row">
+                    <!-- right side div -->
+                    <div class="col-md-12 col-12 main_header_left align-items-center">
+                        <figure class="errimg">
+                            <img src="image/404.gif" class="img-fluid img" alt=""
+                                title="Pruthviraj Koravi">
+                        </figure>
+                        <p>Welcome to the <span class="text_color">Weather App</span></p>
+                        <h1>{{errorMsg}}</h1>
+                        <a href="/"><button>Go Back</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--close main-header -->
+
+    <!-- footer code -->
+    {{>footer}}
+    <!-- footer code -->
+</body>
+
+</html>
